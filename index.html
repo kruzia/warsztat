@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sit on chair</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -27,8 +28,6 @@
                         <li><a href="">Nasz team</a></li>
                         <li><a href="">Historia</a></li>
                     </ul>
-
-
                 </li>
                 <li>
                     <a href=""> Galeria </a>
@@ -40,5 +39,59 @@
             </nav>
         </div>
     </header>
+   
+
+    <section class="main-banner">
+    <div class="container">
+        <div class="banner">
+            <button type="button" class="banner-prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button> <!-- domyslnie button bez typu to submit do wypelnienia-->
+                
+            <button type="button" class="banner-next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+            <div class="banner-slides">
+                <div class="banner-slide banner-slide-active">1</div>
+                <div class="banner-slide">2</div>
+                <div class="banner-slide">3</div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="mine-contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <form class="form" method="" >
+                <div class="form-left">
+                    <div class="form-row">
+                        <label for="name"  class="visuallyhidden">Imię</label>
+                        <input type="text" id="name" name="name" placeholder="Imię">
+                    </div>
+                    <div class="form-row">
+                        <label for="email"  class="visuallyhidden">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-row">
+                        <label for="message" class="visuallyhidden">Wiadomość</label>
+                        <textarea type="message" id="message" name="message" placeholder="Wiadomość"></textarea>
+                    </div>
+                    
+                </div>
+                <div class="form-right">
+                    <div class="form-image"></div>
+                    <div class="form-row">
+                        <label class="form-checkbox">
+                           <input type="checkbox">  <!-- okryciepolalabelem -->
+                            <span></span> 
+                            Zgadam się na przetwarzanie danych osobowych
+                        
+                        </label>
+                    </div>
+                    <button type="submit" class="button">Wyślij</button>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
